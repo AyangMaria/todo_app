@@ -1,9 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 
-function handleclick(){
-  
-  alert ("are you sure you want to edit?")
+function handleclick(id){
+  alert (`are you sure you want to edit TODO #${id}?`);
 };
 
 function noclick() {
@@ -40,7 +39,7 @@ function App() {
             <td>5/11/23</td>
             <td>
             <div className='action-btn'>
-              <button onClick = {handleclick} className='btn edit-btn'>Edit</button>
+              <button onClick = {() => handleclick(1)} className='btn edit-btn'>Edit</button>
               <button onClick = {noclick}className='btn delete-btn'>Delete</button>
               </div>
             </td>
@@ -53,7 +52,7 @@ function App() {
             <td>5/11/23</td>
             <td>
             <div className='action-btn'>
-              <button onClick = {handleclick} className='btn edit-btn'>Edit</button>
+              <button onClick = {() => handleclick(2)} className='btn edit-btn'>Edit</button>
               <button onClick = {noclick}className='btn delete-btn'>Delete</button>
               </div>
             </td>
@@ -66,7 +65,7 @@ function App() {
             <td>5/11/23</td>
             <td>
             <div className='action-btn'>
-              <button onClick = {handleclick} className='btn edit-btn'>Edit</button>
+              <button onClick = {() => handleclick(3)} className='btn edit-btn'>Edit</button>
               <button onClick = {noclick}className='btn delete-btn'>Delete</button>
               </div>
             </td>
@@ -79,7 +78,7 @@ function App() {
             <td>5/11/23</td>
             <td>
               <div className='action-btn'>
-              <button onClick = {handleclick} className='btn edit-btn'>Edit</button>
+              <button onClick = {() => handleclick(4)} className='btn edit-btn'>Edit</button>
               <button onClick = {noclick}className='btn delete-btn'>Delete</button>
               </div>
             </td>
