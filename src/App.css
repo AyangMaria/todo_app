@@ -82,12 +82,35 @@ tr:nth-child(even){
   cursor: pointer;
 }
 
+.btn-div{
+  height: 100px;
+  position: relative;
+  
+}
 .add-btn{
   float: right;
   background-color: #04aa6d;
   border: 0px;
   margin-left: auto;
   width: 100px;
+}
+
+.new-btn{
+  background-color: #04aa6d;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+  
 }
 
 .edit-btn{
@@ -97,3 +120,27 @@ tr:nth-child(even){
 .delete-btn{
   background-color: #f44336;
 }
+
+.TodoPage{
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+}
+.Todo-header{
+  text-align: center;
+  font-size: larger;
+  margin: 10px;
+  /* border-bottom: 2px solid black; */
+
+}
+input, select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+}
+

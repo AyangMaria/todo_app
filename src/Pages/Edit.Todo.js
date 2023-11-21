@@ -1,0 +1,36 @@
+import React from "react";
+
+function EditTodo() {
+    return (
+        <div className="TodoPage"> 
+        <div className="Todo-header">Edit Todo Page</div>
+
+        <div className="Form-div">
+            <form>
+                <label for="Title">Title</label>
+                <input type="text" id="Title" name="Title"/>
+
+                <label for="Description"> Description</label>
+                <input type="text" id="Description" name="Description"/>
+
+                <label for="Date">Date</label>
+                <input type="date" id="Date" name="Date"/>
+
+                <label for="Status">Status</label>
+               <select id="Status" name="Status">
+                <option value = "pending">Pending</option>
+                <option value = "Inprogress">In Progress</option>
+                <option value = "Completed">Completed</option>
+               </select>
+
+               <div className="btn-div"><button className="new-btn edit-btn">EDIT TODO</button></div>
+               
+            </form>
+        </div>
+
+
+    </div>
+    )
+}
+
+export default EditTodo;

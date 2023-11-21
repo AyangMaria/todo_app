@@ -5,8 +5,8 @@ function handleclick(id) {
   alert(`are you sure you want to edit TODO #${id}?`);
 }
 
-function noclick() {
-  alert("are you sure you want to delete?");
+function noclick(id) {
+  alert(`are you sure you want to delete TODO #${id}?`);
 }
 
 // function navigate(url) {
@@ -46,7 +46,7 @@ function Home() {
                 <button onClick={() => handleclick(1)} className="btn edit-btn">
                   Edit
                 </button>
-                <button onClick={noclick} className="btn delete-btn">
+                <button onClick={() => noclick(1)} className="btn delete-btn">
                   Delete
                 </button>
               </div>
