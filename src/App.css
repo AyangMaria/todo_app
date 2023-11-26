@@ -38,24 +38,23 @@
   }
 }
 
-.header{
+.header {
   text-align: left;
 }
 
-.table{
+.table {
   width: 100%;
   /* border: 1px solid; */
   padding: 8px;
   text-align: center;
   border: none;
-
 }
 
-.table-div{
+.table-div {
   margin: 20px 8px;
 }
 
-.row-one{
+.row-one {
   background-color: black;
   color: white;
 }
@@ -64,11 +63,11 @@
   color: white;
 } */
 
-tr:nth-child(even){
+tr:nth-child(even) {
   background-color: #e5e2e2;
 }
 
-.btn{
+.btn {
   height: 50px;
   width: 50px;
   color: white;
@@ -82,12 +81,11 @@ tr:nth-child(even){
   cursor: pointer;
 }
 
-.btn-div{
+.btn-div {
   height: 100px;
   position: relative;
-  
 }
-.add-btn{
+.add-btn {
   float: right;
   background-color: #04aa6d;
   border: 0px;
@@ -95,7 +93,7 @@ tr:nth-child(even){
   width: 100px;
 }
 
-.new-btn{
+.new-btn {
   background-color: #04aa6d;
   border-radius: 8px;
   padding: 5px;
@@ -109,31 +107,31 @@ tr:nth-child(even){
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  
-  
+  width: 100%;
+  height: 50px;
 }
 
-.edit-btn{
+.edit-btn {
   background-color: #008cba;
 }
 
-.delete-btn{
+.delete-btn {
   background-color: #f44336;
 }
 
-.TodoPage{
+.TodoPage {
   background-color: #f2f2f2;
   border-radius: 5px;
   padding: 20px;
 }
-.Todo-header{
+.Todo-header {
   text-align: center;
   font-size: larger;
   margin: 10px;
   /* border-bottom: 2px solid black; */
-
 }
-input, select{
+input,
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -141,6 +139,4 @@ input, select{
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
-
 }
-
