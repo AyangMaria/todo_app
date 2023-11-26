@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, NavigateOptions } from "react-router-dom";
 
-function handleclick(id) {
-  alert(`are you sure you want to edit TODO #${id}?`);
+function handleclick(navigate, id) {
+  // alert(`are you sure you want to edit TODO #${id}?`);
+  navigate("/edit");
 }
 
 function noclick(id) {
@@ -14,6 +15,8 @@ function noclick(id) {
 // }
 
 function Home() {
+  const navigate = useNavigate();
+  navigate("/", )
   return (
     <div className="App">
       <div className="header">
@@ -21,7 +24,9 @@ function Home() {
       </div>
 
       <div className="add-btn-div">
-        <Link to={"/add"}><button className="btn add-btn">Add TODO</button></Link>
+        <Link to={"/add"}>
+          <button className="btn add-btn">Add TODO</button>
+        </Link>
       </div>
 
       <div className="table-div">
@@ -38,12 +43,15 @@ function Home() {
           <tr>
             <td>1</td>
             <td>Learn React</td>
-            <td>My Name is Maria and i am to learn React with Bro. Micheal</td>
+            <td>My Name is Maria and i am to learn React with Bro. Michael</td>
             <td>Pending</td>
             <td>5/11/23</td>
             <td>
               <div className="action-btn">
-                <button onClick={() => handleclick(1)} className="btn edit-btn">
+                <button
+                  onClick={() => handleclick(navigate, 1)}
+                  className="btn edit-btn"
+                >
                   Edit
                 </button>
                 <button onClick={() => noclick(1)} className="btn delete-btn">
@@ -56,15 +64,15 @@ function Home() {
           <tr>
             <td>2</td>
             <td>Learn React</td>
-            <td>My Name is Maria and i am to learn React with Bro. Micheal</td>
+            <td>My Name is Maria and i am to learn React with Bro. Michael</td>
             <td>Pending</td>
             <td>5/11/23</td>
             <td>
               <div className="action-btn">
-                <button onClick={() => handleclick(2)} className="btn edit-btn">
+                <button onClick={() => handleclick(navigate, 2)} className="btn edit-btn">
                   Edit
                 </button>
-                <button onClick={noclick} className="btn delete-btn">
+                <button onClick={() => noclick(2)} className="btn delete-btn">
                   Delete
                 </button>
               </div>
@@ -74,15 +82,15 @@ function Home() {
           <tr>
             <td>3</td>
             <td>Learn React</td>
-            <td>My Name is Maria and i am to learn React with Bro. Micheal</td>
+            <td>My Name is Maria and i am to learn React with Bro. Michael</td>
             <td>In progress</td>
             <td>5/11/23</td>
             <td>
               <div className="action-btn">
-                <button onClick={() => handleclick(3)} className="btn edit-btn">
+                <button onClick={() => handleclick(navigate, 3)} className="btn edit-btn">
                   Edit
                 </button>
-                <button onClick={noclick} className="btn delete-btn">
+                <button onClick={() => noclick(3)} className="btn delete-btn">
                   Delete
                 </button>
               </div>
@@ -92,15 +100,15 @@ function Home() {
           <tr>
             <td>4</td>
             <td>Learn React</td>
-            <td>My Name is Maria and i am to learn React with Bro. Micheal</td>
+            <td>My Name is Maria and i am to learn React with Bro. Michael</td>
             <td>Completed</td>
             <td>5/11/23</td>
             <td>
               <div className="action-btn">
-                <button onClick={() => handleclick(4)} className="btn edit-btn">
+                <button onClick={() => handleclick(navigate, 4)} className="btn edit-btn">
                   Edit
                 </button>
-                <button onClick={noclick} className="btn delete-btn">
+                <button onClick={() => noclick(4)} className="btn delete-btn">
                   Delete
                 </button>
               </div>
